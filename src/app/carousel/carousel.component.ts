@@ -11,4 +11,5 @@ import { Project } from '../_models/Project';
 })
 export class CarouselComponent {
   @Input() project = {} as Project;
+  @Input() featuredProject = {} as Project;
 }

@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectsService } from '../_services/projects.service';
 import { Project } from '../_models/Project';
+import { CarouselComponent } from '../carousel/carousel.component';
+import { Tag } from '../_models/Tag';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CarouselComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
