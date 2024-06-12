@@ -1,0 +1,7 @@
+<carousel>
+  <div>
+    @for (picture of project.pictures; track project.id) {
+      <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+    }
+  </div>
+</carousel>
