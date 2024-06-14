@@ -10,11 +10,13 @@ import { ProjectsService } from '../_services/projects.service';
   standalone: true,
   imports: [ProjectCardComponent],
   templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.css'
+  styleUrl: './portfolio.component.css',
 })
 export class PortfolioComponent implements OnInit {
 
   projects = {} as Project[];
+
+  isCollapsed: boolean = true;
 
   constructor(private titleService: Title, private projectService: ProjectsService) {
     this.titleService.setTitle('Cristóbal Rosa - portfolio')
