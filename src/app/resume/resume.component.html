@@ -1,3 +1,138 @@
 <div class="container text-center">
   <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download PDF Resume</button>
+    <div class="pb-2">
+      <accordion [isAnimated]="true" class="shadow">
+
+        <accordion-group [(isOpen)] = "isWorkExperienceOpen">
+          <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+            <div style="visibility: hidden;"></div>
+            <div class="btn-link">Work Experience</div>
+            <div style="width: 10.95px;">
+              @if (!isWorkExperienceOpen) {<div style="color: white;">></div>}
+              @else {<div style="color: white;">v</div>}
+            </div>
+          </button>
+          <div style="text-align: left;">
+            <h2 class="mb-0">Software Engineer</h2>
+            <h3 class="text-primary">Sample Company</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
+            </ul>
+          </div>
+          <hr>
+          <div style="text-align: left;">
+            <h2 class="mb-0">Manager</h2>
+            <h3 class="text-primary">Warehouse</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
+            </ul>
+          </div>
+          <hr>
+          <div style="text-align: left;">
+            <h2 class="mb-0">Warehouse Associate</h2>
+            <h3 class="text-primary">Warehouse</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
+            </ul>
+          </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)] = "isEducationOpen">
+          <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+            <div style="visibility: hidden;"></div>
+            <div class="btn-link">Education</div>
+            <div style="width: 10.95px;">
+              @if (!isEducationOpen) {<div style="color: white;">></div>}
+              @else {<div style="color: white;">v</div>}
+            </div>
+          </button>
+          <div style="text-align: left;">
+            <h2 class="m-0">Bachelor's of Science in Computer Sciencie</h2>
+            <h3 class="text-primary">Purdue University</h3>
+            <ul>
+              <li>Graduated from Purdue University in May 2019</li>
+              <li>Graduated with a 3.9 GPA</li>
+              <li>Participated in extracurricular clubs such us the enginerring club, the robotics team, and more!</li>
+            </ul>
+          </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)]="isCertificationsOpen">
+          <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+            <div style="visibility: hidden;"></div>
+            <div class="btn-link">Certifications</div>
+            <div style="width: 10.95px;">
+              @if (!isCertificationsOpen) {<div style="color: white;">></div>}
+              @else {<div style="color: white;">v</div>}
+            </div>
+          </button>
+          <div style="text-align: left;">
+            <h3>Microsoft Azure Data Fundamentals (DP-900)</h3>
+            <ul>
+              <li>Obtained August 2020</li>
+              <li>#9899899998384848</li>
+            </ul>
+            <h3>Google IT suport Specialist</h3>
+            <ul>
+              <li>Obtained December 2018</li>
+              <li>#899398999838999</li>
+            </ul>
+          </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)]="isSkillsOpen">
+          <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+            <div style="visibility: hidden;"></div>
+            <div class="btn-link">Skills</div>
+            <div style="width: 10.95px;">
+              @if (!isSkillsOpen) {<div style="color: white;">></div>}
+              @else {<div style="color: white;">v</div>}
+            </div>
+          </button>
+          <div class="row" style="text-transform: left;">
+            <div class="col">
+              <h3>Programming Languages:</h3>
+              <ul>
+                <li>C#</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>Java</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Frameworks</h3>
+              <ul>
+                <li>Angular</li>
+                <li>React</li>
+                <li>ASP.NET</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Other Skills:</h3>
+              <ul>
+                <li>Source control via GIT</li>
+                <li>MVC Arquitecture</li>
+                <li>Agile Development</li>
+              </ul>
+            </div>
+          </div>
+        </accordion-group>
+
+      </accordion>
+    </div>
 </div>
+
+
