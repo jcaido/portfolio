@@ -15,6 +15,7 @@ import { Tag } from '../_models/Tag';
 export class HomeComponent implements OnInit {
 
   featuredProject = {} as Project;
+  pictures: string[] = ["assets/tallerFront1.png", "assets/tallerBack1.png"]
 
   constructor(private titleService: Title, private projectService: ProjectsService) {
     this.titleService.setTitle('Cristóbal Rosa - home')

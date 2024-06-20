@@ -12,6 +12,8 @@ import { CarouselComponent } from '../carousel/carousel.component';
 })
 export class ProjectModalComponent {
   @Input() project = {} as Project;
+  //pictures: string[] = ["assets/tallerFront1.png", "assets/tallerBack1.png"]
+  //pictures: string[] = this.project.pictures;
 
   constructor(public bsModalRef: BsModalRef) {
 

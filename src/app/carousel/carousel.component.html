@@ -1,4 +1,5 @@
 <carousel>
-  <slide><img src="assets/tallerFront1.png" alt="slide" style="display: block; width: 100%;"></slide>
-  <slide><img src="assets/tallerBack1.png" alt="slide" style="display: block; width: 100%;"></slide>
+  @for (picture of pictures; track $index) {
+    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+  }
 </carousel>

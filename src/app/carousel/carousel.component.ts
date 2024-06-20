@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { Project } from '../_models/Project';
 
 @Component({
   selector: 'app-carousel',
@@ -10,6 +9,5 @@ import { Project } from '../_models/Project';
   styleUrl: './carousel.component.css'
 })
 export class CarouselComponent {
-  @Input() project = {} as Project;
-  @Input() featuredProject = {} as Project;
+  @Input() pictures: string[] =[];
 }
