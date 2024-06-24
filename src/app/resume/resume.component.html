@@ -1,70 +1,50 @@
 <div class="container text-center">
-  <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download PDF Resume</button>
+  <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Descargar PDF Curriculum Vitae</button>
     <div class="pb-2">
       <accordion [isAnimated]="true" class="shadow">
 
         <accordion-group [(isOpen)] = "isWorkExperienceOpen">
           <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
             <div style="visibility: hidden;"></div>
-            <div class="btn-link">Work Experience</div>
+            <div class="btn-link">Experiencia laboral</div>
             <div style="width: 10.95px;">
               @if (!isWorkExperienceOpen) {<div style="color: white;">></div>}
               @else {<div style="color: white;">v</div>}
             </div>
           </button>
           <div style="text-align: left;">
-            <h2 class="mb-0">Software Engineer</h2>
-            <h3 class="text-primary">Sample Company</h3>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
-            </ul>
+            <h2 class="mb-0">Contabilidad</h2>
+            <hr>
+            <p>&nbsp;&nbsp; Más de veinte años de experiencia como contable. Destaco mis funciones durante los últimos
+              quince años en  <strong class="text-primary">MAEXCAR CÓRDOBA SL</strong>  como contable de ciclo completo
+              y Contabilidad analítica.
+            </p>
           </div>
-          <hr>
+          <br>
           <div style="text-align: left;">
-            <h2 class="mb-0">Manager</h2>
-            <h3 class="text-primary">Warehouse</h3>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
-            </ul>
-          </div>
-          <hr>
-          <div style="text-align: left;">
-            <h2 class="mb-0">Warehouse Associate</h2>
-            <h3 class="text-primary">Warehouse</h3>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Lorem ipsum dolor sit amet, consectetur elit, Lorem ipsum dolor sit amet, consectetur elit, consectetur elit</li>
-            </ul>
+            <h2 class="mb-0">Software developer</h2>
+            <hr>
+            <p>&nbsp;&nbsp;  En estos momentos, me encuentro inmerso en la búsqueda de mi primer empleo domo desarrollador
+              de software. Mi eperiencia se basa en la realización de los proyectos personales que se encuentran descritos
+              en este portfolio.
+            </p>
           </div>
         </accordion-group>
 
         <accordion-group [(isOpen)] = "isEducationOpen">
           <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
             <div style="visibility: hidden;"></div>
-            <div class="btn-link">Education</div>
+            <div class="btn-link">Formación</div>
             <div style="width: 10.95px;">
               @if (!isEducationOpen) {<div style="color: white;">></div>}
               @else {<div style="color: white;">v</div>}
             </div>
           </button>
           <div style="text-align: left;">
-            <h2 class="m-0">Bachelor's of Science in Computer Sciencie</h2>
-            <h3 class="text-primary">Purdue University</h3>
+            <h2 class="m-0">Licenciado en Ciencias Económicas y Empresariales</h2>
+            <h3 class="text-primary">Universidad de Córdoba</h3>
             <ul>
-              <li>Graduated from Purdue University in May 2019</li>
-              <li>Graduated with a 3.9 GPA</li>
-              <li>Participated in extracurricular clubs such us the enginerring club, the robotics team, and more!</li>
+              <li>Licenciado por la Universidad de Córdoba en Septiembre de 1995</li>
             </ul>
           </div>
         </accordion-group>
@@ -72,22 +52,62 @@
         <accordion-group [(isOpen)]="isCertificationsOpen">
           <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
             <div style="visibility: hidden;"></div>
-            <div class="btn-link">Certifications</div>
+            <div class="btn-link">Certificaciones</div>
             <div style="width: 10.95px;">
               @if (!isCertificationsOpen) {<div style="color: white;">></div>}
               @else {<div style="color: white;">v</div>}
             </div>
           </button>
           <div style="text-align: left;">
-            <h3>Microsoft Azure Data Fundamentals (DP-900)</h3>
+            <h3>JavaScript</h3>
             <ul>
-              <li>Obtained August 2020</li>
-              <li>#9899899998384848</li>
+              <li>Obtenido en Agosto de 2022</li>
+              <li>Emitido por OpenBootcamp</li>
             </ul>
-            <h3>Google IT suport Specialist</h3>
+            <h3>Java avanzado</h3>
             <ul>
-              <li>Obtained December 2018</li>
-              <li>#899398999838999</li>
+              <li>Obtenido en Octubre de 2022</li>
+              <li>Emitido por OpenBootcamp</li>
+            </ul>
+            <h3>Java Spring</h3>
+            <ul>
+              <li>Obtenido en Noviembre de 2022</li>
+              <li>Emitido por OpenBootcamp</li>
+            </ul>
+            <h3>Hibernate</h3>
+            <ul>
+              <li>Obtenido en Noviembre de 2022</li>
+              <li>Emitido por OpenBootcamp</li>
+            </ul>
+            <h3>Git</h3>
+            <ul>
+              <li>Obtenido en Diciembre de 2022</li>
+              <li>Emitido por OpenBootcamp</li>
+            </ul>
+            <h3>React</h3>
+            <ul>
+              <li>Obtenido en Febrero de 2023</li>
+              <li>Emitido por OpenBootcamp</li>
+            </ul>
+            <h3>Guía completa Junit y Mockito</h3>
+            <ul>
+              <li>Obtenido en Mayo de 2023</li>
+              <li>Cursado en Udemy</li>
+            </ul>
+            <h3>Microservicios con Spring Cloud</h3>
+            <ul>
+              <li>Obtenido en Septiembre de 2023</li>
+              <li>Cursado en Udemyp</li>
+            </ul>
+            <h3>Responsable experto de data</h3>
+            <ul>
+              <li>Obtenido en Septiembre de 2022</li>
+              <li>Emitido por Cas Training</li>
+            </ul>
+            <h3>Análisis de datos</h3>
+            <ul>
+              <li>Obtenido en Junio de 2024</li>
+              <li>Emitido por Google</li>
             </ul>
           </div>
         </accordion-group>
