@@ -25,7 +25,7 @@
             <h2 class="mb-0">Software developer</h2>
             <hr>
             <p>&nbsp;&nbsp;  En estos momentos, me encuentro inmerso en la búsqueda de mi primer empleo domo desarrollador
-              de software. Mi eperiencia se basa en la realización de los proyectos personales que se encuentran descritos
+              de software. Mi experiencia se basa en la realización de los proyectos personales que se encuentran descritos
               en este portfolio.
             </p>
           </div>
@@ -49,6 +49,24 @@
           </div>
         </accordion-group>
 
+        <accordion-group [(isOpen)] = "isLenguagesOpen">
+          <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+            <div style="visibility: hidden;"></div>
+            <div class="btn-link">Idiomas</div>
+            <div style="width: 10.95px;">
+              @if (!isLenguagesOpen) {<div style="color: white;">></div>}
+              @else {<div style="color: white;">v</div>}
+            </div>
+          </button>
+          <div style="text-align: left;">
+            <h2 class="m-0">Inglés</h2>
+            <h3 class="text-primary">Certificación APTIS B2</h3>
+            <ul>
+              <li>Obtenida en Septiembre de 2023</li>
+            </ul>
+          </div>
+        </accordion-group>
+
         <accordion-group [(isOpen)]="isCertificationsOpen">
           <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
             <div style="visibility: hidden;"></div>
@@ -62,32 +80,32 @@
             <h3>JavaScript</h3>
             <ul>
               <li>Obtenido en Agosto de 2022</li>
-              <li>Emitido por OpenBootcamp</li>
+              <li>Emitido por Open Bootcamp</li>
             </ul>
             <h3>Java avanzado</h3>
             <ul>
               <li>Obtenido en Octubre de 2022</li>
-              <li>Emitido por OpenBootcamp</li>
+              <li>Emitido por Open Bootcamp</li>
             </ul>
             <h3>Java Spring</h3>
             <ul>
               <li>Obtenido en Noviembre de 2022</li>
-              <li>Emitido por OpenBootcamp</li>
+              <li>Emitido por Open Bootcamp</li>
             </ul>
             <h3>Hibernate</h3>
             <ul>
               <li>Obtenido en Noviembre de 2022</li>
-              <li>Emitido por OpenBootcamp</li>
+              <li>Emitido por Open Bootcamp</li>
             </ul>
             <h3>Git</h3>
             <ul>
               <li>Obtenido en Diciembre de 2022</li>
-              <li>Emitido por OpenBootcamp</li>
+              <li>Emitido por Open Bootcamp</li>
             </ul>
             <h3>React</h3>
             <ul>
               <li>Obtenido en Febrero de 2023</li>
-              <li>Emitido por OpenBootcamp</li>
+              <li>Emitido por Open Bootcamp</li>
             </ul>
             <h3>Guía completa Junit y Mockito</h3>
             <ul>
@@ -115,7 +133,7 @@
         <accordion-group [(isOpen)]="isSkillsOpen">
           <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
             <div style="visibility: hidden;"></div>
-            <div class="btn-link">Skills</div>
+            <div class="btn-link">Habilidades y Aptitudes</div>
             <div style="width: 10.95px;">
               @if (!isSkillsOpen) {<div style="color: white;">></div>}
               @else {<div style="color: white;">v</div>}
@@ -123,29 +141,23 @@
           </button>
           <div class="row" style="text-transform: left;">
             <div class="col">
-              <h3>Programming Languages:</h3>
+              <h3>Tecnologías</h3>
               <ul>
-                <li>C#</li>
-                <li>TypeScript</li>
-                <li>Python</li>
-                <li>Java</li>
+                <li>Java (Spring Boot, Hibernate)</li>
+                <li>JavaScript (React, Angular)</li>
+                <li>SQL (MySql, PostgreSql)</li>
+                <li>Docker</li>
+                <li>Microservicios (Spring Cloud)</li>
               </ul>
             </div>
             <div class="col">
-              <h3>Frameworks</h3>
+              <h3>Aptitudes</h3>
               <ul>
-                <li>Angular</li>
-                <li>React</li>
-                <li>ASP.NET</li>
-                <li>Node.js</li>
-              </ul>
-            </div>
-            <div class="col">
-              <h3>Other Skills:</h3>
-              <ul>
-                <li>Source control via GIT</li>
-                <li>MVC Arquitecture</li>
-                <li>Agile Development</li>
+                <li>Pensamiento analítico</li>
+                <li>Adaptabilidad</li>
+                <li>Espíritu colaborativo</li>
+                <li>Orientación hacia los resultados</li>
+                <li>Lealtad y compromiso</li>
               </ul>
             </div>
           </div>

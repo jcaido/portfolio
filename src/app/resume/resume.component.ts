@@ -13,6 +13,7 @@ export class ResumeComponent {
 
   isWorkExperienceOpen: boolean = false;
   isEducationOpen: boolean = false;
+  isLenguagesOpen: boolean = false;
   isCertificationsOpen: boolean = false;
   isSkillsOpen: boolean = false;
 
