@@ -20,9 +20,6 @@ export class PolideportivoCardComponent {
 
     const modalOption: ModalOptions = {
       class: "modal-lg",
-      //initialState: {
-      //  project: this.project
-      //}
     };
 
     this.bsModalRef = this.modalService.show(PolideportivoModalComponent, modalOption);
