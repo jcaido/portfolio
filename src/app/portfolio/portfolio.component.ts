@@ -4,11 +4,12 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../_models/Project';
 import { ProjectsService } from '../_services/projects.service';
 import { PolideportivoCardComponent } from "../polideportivo-card/polideportivo-card.component";
+import { MicroserviciosCardComponent } from "../microservicios-card/microservicios-card.component";
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectCardComponent, PolideportivoCardComponent],
+  imports: [ProjectCardComponent, PolideportivoCardComponent, MicroserviciosCardComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
 })
