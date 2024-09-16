@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../_models/Project';
-import { Tag } from '../_models/Tag';
 import { ProjectsService } from '../_services/projects.service';
+import { PolideportivoCardComponent } from "../polideportivo-card/polideportivo-card.component";
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectCardComponent],
+  imports: [ProjectCardComponent, PolideportivoCardComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
 })
